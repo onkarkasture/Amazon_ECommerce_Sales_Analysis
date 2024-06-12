@@ -23,6 +23,7 @@ By @Onkar_Kasture
 
 ## Introduction
 This project focuses on analyzing Amazon's E-Commerce sales data on clothing to gain insights into sales trends, product performance, and other relevant metrics. Python and popular data analysis libraries such as pandas, matplotlib, seaborn, and plotly are utilized for data processing, visualization, and analysis.
+Here's the jupyter notebook that you can refer for actual code: [Link](/Amazon_sales_analysis.ipynb)
 
 ### Import necessary modules
 ```python
