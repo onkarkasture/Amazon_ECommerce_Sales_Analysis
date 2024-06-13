@@ -273,15 +273,15 @@ average_amount['colors'] = average_amount['amount'].apply(lambda x: 'lime' if x>
 fig = px.bar(average_amount, x='category', y='amount', color='colors', title='Category wise Average Amount Spent', template='plotly_dark', 
              labels={'category':'Category', 'amount':'Amount Spent'})
 fig.add_shape(type="line",
-              x0=-0.5,
-              y0=mean_amount,
-              x1=len(average_amount) - 0.5,
-              y1=mean_amount,
-              line=dict(
-                  color="cyan",
-                  width=3,
-                  dash="dash"
-              ))
+    x0=-0.5,
+    y0=mean_amount,
+    x1=len(average_amount) - 0.5,
+    y1=mean_amount,
+    line=dict(
+        color="cyan",
+        width=3,
+        dash="dash")
+    )
 
 fig.add_annotation(
     x=1,
@@ -292,9 +292,8 @@ fig.add_annotation(
     showarrow=False,
     font=dict(
         color="cyan",
-        size=12
+        size=12)
     )
-)
 fig.for_each_trace(lambda t: t.update(name='Top Categories' if t.name == 'lime' else 'Other Categories'))
 fig.update_xaxes(categoryorder='total ascending')
 fig.update_layout(hoverlabel_font_color='white')
@@ -317,15 +316,15 @@ fig = px.bar(top_sales, x='size', y='qty', color = 'colors', template='plotly_da
     'qty':'Sales Qty', 'size':'Size'})
 fig.for_each_trace(lambda t: t.update(name='Top Sizes' if t.name == 'lime' else 'Other Sizes'))
 fig.add_shape(type="line",
-              x0=-0.5,
-              y0=top_qty[0],
-              x1=len(top_sales['size'])-0.5,
-              y1=top_qty[0],
-              line=dict(
-                  color="cyan",
-                  width=3,
-                  dash="dash"
-              ))
+    x0=-0.5,
+    y0=top_qty[0],
+    x1=len(top_sales['size'])-0.5,
+    y1=top_qty[0],
+    line=dict(
+        color="cyan",
+        width=3,
+        dash="dash"
+    ))
 
 fig.add_annotation(
     x=len(top_sales['size'])-3,
