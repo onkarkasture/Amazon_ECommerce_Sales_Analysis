@@ -385,7 +385,7 @@ print(f'Among the top categories throughout the states {''.join(top.ship_state.v
 ![](images/topstate.png)
 
 
-Among the top categories throughout the states **MAHARASHTRA** had highest total orders while also topping in **kurta** category with total **7574** kurtas ordered.
+Among the top categories throughout the states **MAHARASHTRA** had highest total orders while also topping in **kurta** category with total **7574** kurtas ordered. Only top 10 states were considered here since adding more would make the graph clutered without necessarily adding more value.
 
 # Conclusion
 In this Amazon sales data analysis, we started by importing necessary modules and then proceeded to import the dataset using pandas. After an initial inspection, we performed data cleaning tasks such as renaming columns, changing data types, handling missing values, and removing duplicates.
