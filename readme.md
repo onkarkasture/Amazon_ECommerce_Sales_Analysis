@@ -378,7 +378,7 @@ fig.show()
 
 top = state_cats[state_cats['sum']==state_cats['sum'].max()]
 
-print(f'Among the top categories throughout the states {''.join(top.ship_state.values)} had highest total orders while also topping in {''.join(top.category.values)} category with total {top['sum'].values[0]} {''.join(top.category.values)}s ordered.\n')
+print(f'Among the top categories throughout the states {''.join(top.ship_state.values)} had highest total orders while also topping in {''.join(top.category.values)} category with total {top['sum'].values[0]} {''.join(top.category.values)}s ordered.\nOnly top 10 states were considered here since adding more would make the graph clutered without necessarily adding more value.')
 ```
 
 
